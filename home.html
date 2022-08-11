@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+FILE NAME: home.html
+WRITTEN BY: Alexa Halim, Luisana Gracia, & Moji Niyamanusorn
+DATE: November 15, 2021
+PURPOSE: CS115/ΜΑΣ115 project milestone 4
+
+-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Alexa Halim">
+  <title>Visual Activism</title>
+  <link href="pm4_style.css" rel="stylesheet">
+  <link
+  href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+  rel="stylesheet">
+  <link
+  href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap"
+  rel="stylesheet">
+  <script src="pm4_graphics.js"></script>
+  <script src="https://kit.fontawesome.com/d03ffb67d5.js"
+  crossorigin="anonymous"></script>
+  <script src="./tooltip.js"></script>
+</head>
+
+<body>
+  <div id="divider">
+    <div class="header">
+      <a href="home.html" class="home"><img src="images/IGlogo.png"
+        height=50 alt="Instagram logo"></a>
+      <img src="images/brianPFP.jpg" height=45 class="home dropbtn"
+        onclick = "dropdown()" alt="Brian's profile picture">
+      <div class="dropdown-content" id="myDropdown">
+        <a href="home.html">Profile</a>
+        <a href="history.html">History</a>
+        <a href="corporateActivism.html">Corporate Efforts</a>
+        <a href="societalEffects.html">Societal Effects</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="profileBio">
+    <img class="picture" src="images/brianPFP.jpg" height=200
+      alt="Brian's profile picture">
+    <h1>visual.activism</h1>
+    <div id="stats">
+      <p class="itemA"><b>6</b> posts</p>
+      <p class="itemB"><b>100M</b> followers</p>
+      <p class="itemC"><b>3</b> following</p>
+    </div>
+    <p class="nameNbio"><b>Alexa, Luisana, Moji</b><br>Assistant Prof at
+      Wellesley CS | Expecting father | Board game designer | Former filmmaker |
+      vegetarian | he/him<br>
+      <a href="https://wellesley.edu">link.tree/TopTenSaddestPlacesToBe</a>
+  </div>
+
+  <div id="instagramPosts">
+    <div class="row">
+      <div class="tooltip">
+        <a href="history.html"><img src="images/projectAlexa.jpg"
+        height=350 alt="An infographic with the words <q>The History of Visual
+        Activism Visual Activism During the COVID-19 Pandemic and Social Media
+        Activism Era</q>."></a>
+        <div class="tooltiptext">
+          <div class="sypTxt">
+            <h2>Visual Activism: The Growth of Data Visualization and
+            Infographics</h2>
+            <p>Alexa will answer: What is the evolution of data visualization
+              and visual activism into the age of social media?</p>
+          </div>
+          <img src="images/projectAlexa.jpg"
+          height=100 alt="An infographic with the words <q>The History of
+          Visual Activism - Visual Activism During the COVID-19 Pandemic and
+          Social Media Activism Era</q>." class="sypImg">
+        </div>
+      </div>
+
+      <div class="tooltip">
+        <a href="corporateActivism.html"><img src="images/projectLuisana.jpg"
+          height=350 alt="An infographic with the words <q>Visual Activism:
+          Corporate Efforts to Do Good</q>."></a>
+        <div class="tooltiptext">
+          <div class="sypTxt">
+            <h2>Visual Activism: Corporate Efforts to Do Good</h2>
+            <p>Luisana will explore the concept of performative activism within
+              the scope of corporate settings and answer whether the actions of
+              corporate social media accounts are genuine or moved by the
+              prospect of profit.</p>
+          </div>
+          <img src="images/projectLuisana.jpg"
+            height=100 alt="An infographic with the words <q>Visual Activism:
+            Corporate Efforts to Do Good</q>." class="sypImg">
+        </div>
+      </div>
+
+      <div class="tooltip">
+        <a href="societalEffects.html"><img src="images/projectMoji.jpg"
+          height=350 alt="An infographic with the words <q>How performative
+          activism affects society and social movements</q>."></a>
+        <div class="tooltiptext">
+          <div class="sypTxt">
+            <h2>Visual Activism: How Infographics on Social Media Affect
+              Individuals and Society.</h2>
+            <p>Moji will explore the concept of performative activism within
+              the scope of visual graphics and how performative activism affects
+              society and social movements.</p>
+          </div>
+          <img src="images/projectMoji.jpg"
+            height=100 alt="An infographic with the words <q>How performative
+            activism affects society and social movements</q>." class="sypImg">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="box">
+        <img src="images/youtubeThumbnail.jpg" height=350 alt="An infographic
+        with the words <q>project inspiration</q> and a screenshot of a YouTube
+        video titled the instagram infographic industrial complex"
+        class="posts">
+        <div class="fadeEffect">
+          <div class="overlay"><p class="likes"><i class="fas fa-heart"></i>
+            12M <i class="fas fa-comment"></i> 100K</p></div>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="images/wellesleySunsets.jpg" height=350 alt="An infographic
+        with the words <q>Wellesley sunsets</q> and two pictures of beautiful
+        sunsets over Lake Waban and a little caption that says
+        <q>Lake Waban</q>" class="posts">
+        <div class="fadeEffect">
+          <div class="overlay"><p class="likes"><i class="fas fa-heart"></i>
+            12M <i class="fas fa-comment"></i> 100K</p></div>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="images/boardGames.jpg" height=350 alt="An infographic titled
+          <q>Best Board Games 2021, according to Wirecutter</q> with the
+          following rank, in increasing order: Scythe, Small World, Anomia,
+          Betrayal at House on the Hill, Mysterium, Pandemic Legacy: Season 1,
+          Star Wars: Outer Rim, Sherlock Holmes Consulting Detective: The Thames
+          Murders & Other Cases, Cathedral, Sagrada, and Wingspan"
+          class="posts">
+        <div class="fadeEffect">
+          <div class="overlay"><p class="likes"><i class="fas fa-heart"></i>
+            12M <i class="fas fa-comment"></i> 100K</p></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="copyright">
+    <p>Copyright alm2021. All rights reserved. Research by Alexa H., Luisana G.,
+      and Moji N. Profile picture of Brian. Not affiliated. Please don't sue.</p>
+  </div>
+
+</body>
+
+</html>
